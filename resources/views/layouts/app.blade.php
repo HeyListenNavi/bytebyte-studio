@@ -19,7 +19,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="min-h-screen bg-body text-foreground bg-contain lg:bg-cover bg-top bg-no-repeat">
+<body class="min-h-screen bg-body text-foreground bg-contain bg-top bg-no-repeat">
     @yield('body')
 </body>
 
