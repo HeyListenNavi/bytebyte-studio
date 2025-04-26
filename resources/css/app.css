@@ -68,15 +68,15 @@
     --text-label-small--font-weight: regular;
 
     /* Images */
-    --background-image-body: url("/assets/hero-background.png"),
-        linear-gradient(0, #080a0c 75%, #101418);
-    --background-image-gradient: radial-gradient(
-        at right bottom,
-        #6233a4,
-        rgba(32 21 58) 90%
-    );
+    --background-image-body: url("@images/hero-background.png"),
+        linear-gradient(180deg, rgba(8, 10, 12, 1) 100vh, rgba(16, 20, 24, 1) 100%);
+    
+    --background-color-glass: rgba(39, 39, 39, 0.1);
+    
 }
 
-.text-display-large, .text-display-medium, .text-headline-large {
+.text-display-large,
+.text-display-medium,
+.text-headline-large {
     font-family: "Raleway";
 }
