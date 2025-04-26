@@ -13,13 +13,13 @@
         href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
 
     <!-- Icons -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="min-h-screen bg-body text-foreground bg-contain bg-top bg-no-repeat">
+<body class="min-h-screen bg-body text-foreground bg-contain lg:bg-cover bg-top bg-no-repeat">
     @yield('body')
 </body>
 
