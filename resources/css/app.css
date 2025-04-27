@@ -26,12 +26,14 @@
     --color-highlight-light: #9063cf;
     --color-highlight-dark: #20153a;
 
+    --color-whatsapp: #128c7e;
+
     /* Texts */
     --text-display-large: 72px;
     --text-display-large--line-height: 120%;
     --text-display-large--font-weight: bold;
 
-    --text-display-medium: 64px;
+    --text-display-medium: 48px;
     --text-display-medium--line-height: 120%;
     --text-display-medium--font-weight: bold;
 
@@ -55,7 +57,7 @@
     --text-body-small--line-height: 160%;
     --text-body-small--font-weight: regular;
 
-    --text-label-large: 16px;
+    --text-label-large: 20px;
     --text-label-large--line-height: 120%;
     --text-label-large--font-weight: bold;
 
@@ -69,14 +71,33 @@
 
     /* Images */
     --background-image-body: url("@images/hero-background.png"),
-        linear-gradient(180deg, rgba(8, 10, 12, 1) 100vh, rgba(16, 20, 24, 1) 100%);
-    
+        linear-gradient(
+            180deg,
+            rgba(8, 10, 12, 1) 100vh,
+            rgba(16, 20, 24, 1) 100%
+        );
+    --background-image-banner: url("@images/banner-background.png");
+
     --background-color-glass: rgba(39, 39, 39, 0.1);
-    
+    --background-image-light-borders: linear-gradient(
+        -45deg,
+        rgba(203, 194, 204, 0.5) 0%,
+        rgba(32, 21, 58, 1) 20%,
+        rgba(32, 21, 58, 1) 80%,
+        rgba(203, 194, 204, 0.5) 100%
+    );
 }
 
 .text-display-large,
 .text-display-medium,
 .text-headline-large {
     font-family: "Raleway";
+}
+
+.bx {
+    font-size: 1.5em;
+}
+
+[x-cloak] {
+    display: none !important;
 }
