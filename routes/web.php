@@ -20,3 +20,8 @@ Route::get('/policies', [PageController::class, 'policies'])
 
 Route::get('/portfolio', [PageController::class, 'portfolio'])
     ->name('portfolio');
+
+// Todo: Fix this shit
+Route::get('/project', function () {
+    return view('layouts.project');
+})->name('project');
