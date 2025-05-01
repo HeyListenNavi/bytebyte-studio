@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends("layouts.app")
 
-@section('title', 'Servicios')
+@section("title", "Servicios")
 
-@section('body')
+@section("body")
     <x-hero>
         <div class="flex flex-col lg:flex-row gap-4 items-center">
             <i class="group relative bx bx-bulb !text-[120px] -z-10">
@@ -12,16 +12,16 @@
                 <i class="group-hover:opacity-100 duration-700 opacity-0 transition-opacity absolute top-0 left-0 bx bx-bulb !text-[120px] text-highlight blur-xl -z-20"></i>
             </i>
             <div>
-                <h1 class='text-display-medium md:text-display-large text-center md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent'>Servicios</h1>
-                <h3 class='text-body-medium md:text-body-large text-center md:text-start text-foreground-secondary font-normal'>¡Conectamos tu negocio a la tecnología!</h3>
+                <h1 class="text-display-medium md:text-display-large text-center md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">Servicios</h1>
+                <h3 class="text-body-medium md:text-body-large text-center md:text-start text-foreground-secondary font-normal">¡Conectamos tu negocio a la tecnología!</h3>
             </div>
         </div>
     </x-hero>
 
-    <div class='container mx-auto px-4 flex flex-col items-center justify-center gap-10'>
-        <div class='flex flex-col items-center gap-1'>
-            <h2 class='text-body-large text-foreground-secondary font-normal text-center'>Nuestros Servicios Digitales</h2>
-            <h1 class='text-display-medium text-center'>Conectamos tu negocio con la tecnología perfecta</h1>
+    <div class="container mx-auto px-4 flex flex-col items-center justify-center gap-10">
+        <div class="flex flex-col items-center gap-1">
+            <h2 class="text-body-large text-foreground-secondary font-normal text-center">Nuestros Servicios Digitales</h2>
+            <h1 class="text-display-medium text-center">Conectamos tu negocio con la tecnología perfecta</h1>
         </div>
         <div class="divide-y divide-secondary/20">
             <div class="py-10 flex flex-col lg:flex-row gap-8 items-center">
@@ -66,7 +66,7 @@
                     'Panel de administración fácil de usar',
                     'Hosting profesional incluido'
                 ]"
-                href="#"
+                href='#'
             ></x-service>
 
             <x-service
@@ -81,7 +81,7 @@
                     'Sistema de seguimiento de pedidos',
                     'Seguridad SSL premium'
                 ]"
-                href="#"
+                href='#'
             ></x-service>
 
             <x-service
@@ -96,7 +96,7 @@
                     'Sincronización en tiempo real',
                     'Integración con tu base de datos'
                 ]"
-                href="#"
+                href='#'
             ></x-service>
 
             <x-service
@@ -147,18 +147,18 @@
     </div>
 
     <x-banner
-        title='
+        title="
             ¿Listo para llevar tu negocio al mundo digital?
             <br>
             Nosotros lo hacemos fácil
-        '
-        subtitle='Diseñado para emprendedores y negocios que quieren crecer con tecnología accesible'
+        "
+        subtitle="Diseñado para emprendedores y negocios que quieren crecer con tecnología accesible"
     >
         <div class="flex flex-col md:flex-row gap-4">
-            <x-button.outline class='text-label-large'>
+            <x-button.outline class="text-label-large">
                 <span>Ver Portafolio</span>
             </x-button.outline>
-            <x-button class='text-label-large'>
+            <x-button class="text-label-large">
                 <span>Cotizar Servicio</span>
                 <x-bx-arrow-up-right></x-bx-arrow-up-right>
             </x-button>

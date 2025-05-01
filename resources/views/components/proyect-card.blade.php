@@ -1,7 +1,7 @@
 @props([
-    'title',
-    'description',
-    'href'
+    "title",
+    "description",
+    "href"
 ])
 
 <div class="flex flex-col gap-4">

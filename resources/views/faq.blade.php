@@ -1,19 +1,19 @@
-@extends('layouts.app')
+@extends("layouts.app")
 
-@section('title', 'ByteBite Studio')
+@section("title", "ByteBite Studio")
 
-@section('body')
+@section("body")
     <x-hero>
         <div>
-            <h3 class='text-body-medium md:text-body-large text-center text-foreground-secondary font-normal'>Preguntas Frecuentes</h3>
-            <h1 class='text-display-medium md:text-display-large text-center from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent'>¿Tienes dudas? Aquí están las respuestas</h1>
+            <h3 class="text-body-medium md:text-body-large text-center text-foreground-secondary font-normal">Preguntas Frecuentes</h3>
+            <h1 class="text-display-medium md:text-display-large text-center from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">¿Tienes dudas? Aquí están las respuestas</h1>
         </div>
     </x-hero>
     
-    <div class='container mx-auto px-4 flex flex-col items-center justify-center gap-10'>
-        <div class='flex flex-col items-center gap-1'>
-            <h2 class='text-body-large text-foreground-secondary font-normal'>FAQ</h2>
-            <h1 class='text-display-medium text-center'>Lo que todos preguntan antes de empezar</h1>
+    <div class="container mx-auto px-4 flex flex-col items-center justify-center gap-10">
+        <div class="flex flex-col items-center gap-1">
+            <h2 class="text-body-large text-foreground-secondary font-normal">FAQ</h2>
+            <h1 class="text-display-medium text-center">Lo que todos preguntan antes de empezar</h1>
         </div>
         <x-faq-question
             :faqs="[
@@ -80,16 +80,16 @@
             ]"
         ></x-faq-question>
         <div class="flex flex-col gap-2 p-4 w-full">
-            <div class='text-body-large flex justify-between gap-2'>
+            <div class="text-body-large flex justify-between gap-2">
                 <div class="flex items-center gap-1">
                     <i class="bx bx-cuboid"></i>
                     <h1>¿Tienes alguna otra duda?</h1>
                 </div>
             </div>
-            <p class='text-body-medium text-foreground-secondary'>
+            <p class="text-body-medium text-foreground-secondary">
                 Contáctanos y te responderemos en cuanto antes
             </p>
         </div>
-        @include('layouts.contact-form')
+        @include("layouts.contact-form")
     </div>
 @endsection

@@ -1,20 +1,20 @@
-@extends('layouts.app')
+@extends("layouts.app")
 
-@section('title', 'Nosotros')
+@section("title", "Nosotros")
 
-@section('body')
+@section("body")
     <x-hero>
-        <div class='bg-light-borders flex flex-col justify-stretch items-stretch w-fit min-h-[250px] rounded-2xl p-[1px]'>
-            <div class='text-headline-large from-background to-highlight-dark grow flex flex-col justify-center gap-4 rounded-2xl bg-gradient-to-br px-6 py-8 text-end'>
+        <div class="bg-light-borders flex flex-col justify-stretch items-stretch w-fit min-h-[250px] rounded-2xl p-[1px]">
+            <div class="text-headline-large from-background to-highlight-dark grow flex flex-col justify-center gap-4 rounded-2xl bg-gradient-to-br px-6 py-8 text-end">
                 <h2>Simple.</h2>
                 <h2>Eficiente.</h2>
                 <h2>Accesible.</h2>
             </div>
         </div>
-        <div class='flex flex-col items-center md:items-start gap-6'>
+        <div class="flex flex-col items-center md:items-start gap-6">
             <div>
-                <h3 class='text-body-medium md:text-body-large text-center md:text-start text-foreground-secondary font-normal'>ByteBite Studio</h3>
-                <h1 class='text-display-medium md:text-display-large text-center md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent'>El cambio que tu empresa necesita</h1>
+                <h3 class="text-body-medium md:text-body-large text-center md:text-start text-foreground-secondary font-normal">ByteBite Studio</h3>
+                <h1 class="text-display-medium md:text-display-large text-center md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">El cambio que tu empresa necesita</h1>
             </div>
             <div class="w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-between items-center">
                 <p class="text-body-small md:text-body-medium text-secondary">
@@ -26,7 +26,7 @@
                         Simple, funcional y lista para llevarte al siguiente nivel.
                     </span>
                 </p>
-                <x-button class='text-label-large'>
+                <x-button class="text-label-large">
                     <span>Comenzar</span>
                     <x-bx-arrow-up-right></x-bx-arrow-up-right>
                 </x-button> 
@@ -34,9 +34,9 @@
         </div>
     </x-hero>
 
-    <div class='container mx-auto px-4 flex flex-col md:flex-row items-center align-middle justify-center gap-10'>
-        <div class='flex flex-col gap-6'>
-            <h1 class='text-display-medium'>
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center align-middle justify-center gap-10">
+        <div class="flex flex-col gap-6">
+            <h1 class="text-display-medium">
                 Ya estamos ayudando a otras empresas
                 <br>
                 Queremos ayudarte a ti también
@@ -49,8 +49,8 @@
                 <i class="bx bx-chevron-right"></i>
             </x-button.text>
         </div>
-        <div class='bg-light-borders flex flex-col justify-stretch items-stretch w-fit rounded-2xl p-[1px]'>
-            <div class='from-background to-highlight-dark grow flex flex-col justify-center gap-6 rounded-2xl bg-gradient-to-br px-6 py-8'>
+        <div class="bg-light-borders flex flex-col justify-stretch items-stretch w-fit rounded-2xl p-[1px]">
+            <div class="from-background to-highlight-dark grow flex flex-col justify-center gap-6 rounded-2xl bg-gradient-to-br px-6 py-8">
                 <h2 class="text-headline-large">Software diseñado para Ti</h2>
                 <ul class="flex flex-col gap-3">
                     <li class="flex items-center gap-2 text-body-small">
@@ -87,10 +87,10 @@
         </div>
     </div>
 
-    <div class='container mx-auto px-4 flex flex-col items-center align-middle justify-center gap-10'>
-        <div class='flex flex-col items-center gap-6'>
-            <h2 class='text-center text-body-large text-foreground-secondary font-normal'>Proceso de Trabajo</h2>
-            <h1 class='text-center text-display-medium'>¿Cómo Trabajamos en ByteBite Studio?</h1>
+    <div class="container mx-auto px-4 flex flex-col items-center align-middle justify-center gap-10">
+        <div class="flex flex-col items-center gap-6">
+            <h2 class="text-center text-body-large text-foreground-secondary font-normal">Proceso de Trabajo</h2>
+            <h1 class="text-center text-display-medium">¿Cómo Trabajamos en ByteBite Studio?</h1>
         </div>
         <p class="text-body-medium text-secondary">
             Trabajamos en ciclos cortos: aplicamos los pasos de análisis, diseño, desarrollo y entrega para cada funcionalidad (feature) de tu proyecto. Esto nos permite avanzar de manera flexible, trabajando siempre de la mano contigo. Creemos que el cliente es parte activa del proceso, por lo que tu participación constante es esencial para lograr resultados que realmente se adapten a tus necesidades.
@@ -153,10 +153,10 @@
         </x-button>
     </x-banner>
 
-    <div class='container mx-auto px-4 flex flex-col items-center align-middle justify-center gap-10'>
-        <div class='flex flex-col items-center gap-6'>
-            <h2 class='text-center text-body-large text-foreground-secondary font-normal'>Nuestro Equipo</h2>
-            <h1 class='text-center text-display-medium'>¡Conoce al Equipo!</h1>
+    <div class="container mx-auto px-4 flex flex-col items-center align-middle justify-center gap-10">
+        <div class="flex flex-col items-center gap-6">
+            <h2 class="text-center text-body-large text-foreground-secondary font-normal">Nuestro Equipo</h2>
+            <h1 class="text-center text-display-medium">¡Conoce al Equipo!</h1>
         </div>
     </div>
 @endsection

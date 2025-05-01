@@ -1,13 +1,13 @@
 @props([
-    'title',
-    'subtitle',
-    'icon',
-    'text',
-    'items' => [],
-    'href'
+    "title",
+    "subtitle",
+    "icon",
+    "text",
+    "items" => [],
+    "href"
 ])
 
-<div {{ $attributes->merge(['class' => 'flex flex-col lg:flex-row items-center gap-8 py-10']) }}>
+<div {{ $attributes->merge(["class" => "flex flex-col lg:flex-row items-center gap-8 py-10"]) }}>
     <i class="bx {{ $icon }} !text-[160px]"></i>
     <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-1">

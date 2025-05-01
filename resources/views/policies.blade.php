@@ -1,16 +1,16 @@
-@extends('layouts.app')
+@extends("layouts.app")
 
-@section('title', 'ByteBite Studio')
+@section("title", "ByteBite Studio")
 
-@section('body')
+@section("body")
     <x-hero>
         <div>
-            <h1 class='text-display-medium md:text-display-large text-center from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent'>Políticas de Servicio</h1>
-            <h3 class='text-body-medium md:text-body-large text-center text-foreground-secondary font-normal'>Con estas políticas, protegemos tanto tu negocio como el nuestro, asegurando profesionalismo y claridad en cada proyecto</h3>
+            <h1 class="text-display-medium md:text-display-large text-center from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">Políticas de Servicio</h1>
+            <h3 class="text-body-medium md:text-body-large text-center text-foreground-secondary font-normal">Con estas políticas, protegemos tanto tu negocio como el nuestro, asegurando profesionalismo y claridad en cada proyecto</h3>
         </div>
     </x-hero>
     
-    <div class='container mx-auto px-4 flex flex-col items-center justify-center gap-10'>
+    <div class="container mx-auto px-4 flex flex-col items-center justify-center gap-10">
         <x-faq-question
             :faqs="[
                 [
@@ -81,16 +81,16 @@
             ]"
         ></x-faq-question>
         <div class="flex flex-col gap-2 p-4 w-full">
-            <div class='text-body-large flex justify-between gap-2'>
+            <div class="text-body-large flex justify-between gap-2">
                 <div class="flex items-center gap-1">
                     <i class="bx bx-cuboid"></i>
                     <h1>¿Tienes alguna otra duda?</h1>
                 </div>
             </div>
-            <p class='text-body-medium text-foreground-secondary'>
+            <p class="text-body-medium text-foreground-secondary">
                 Contáctanos y te responderemos en cuanto antes
             </p>
         </div>
-        @include('layouts.contact-form')
+        @include("layouts.contact-form")
     </div>
 @endsection

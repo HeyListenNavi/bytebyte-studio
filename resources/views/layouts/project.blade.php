@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends("layouts.app")
 
-@section('body')
+@section("body")
     <x-hero>
         <h1
             class="text-display-medium md:text-display-large from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-end text-transparent md:text-start">
