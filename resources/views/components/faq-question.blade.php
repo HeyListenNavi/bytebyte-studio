@@ -10,7 +10,7 @@
             x-on:click.outside="open = false" 
             class="flex flex-col gap-2 p-4 select-none"
         >
-            <div class="text-body-large flex justify-between gap-2 cursor-pointer">
+            <div class="text-body-medium font-bold flex justify-between gap-2 cursor-pointer">
                 <div class="flex items-center gap-1">
                     @if (array_key_exists("icon", $faq))
                         <i class="bx {{ $faq["icon"] }}"></i>
@@ -26,7 +26,7 @@
                 x-show="open"
                 x-cloak
                 x-collapse
-                class="text-body-medium text-foreground-secondary"
+                class="text-body-small text-foreground-secondary"
             >
                 {{ $faq["text"] }}
             </p>

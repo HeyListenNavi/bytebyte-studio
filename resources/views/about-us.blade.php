@@ -41,7 +41,7 @@
                 <br>
                 Queremos ayudarte a ti también
             </h1>
-            <p class="text-body-medium text-secondary">
+            <p class="text-body-small text-secondary">
                 Nos especializamos en el desarrollo de software a medida, aplicaciones web y móviles que se adaptan a las necesidades específicas de tu negocio. Desde la idea hasta la implementación, te acompañamos en cada paso del proceso para crear soluciones tecnológicas que optimicen tu operación y mejoren tu presencia digital.
             </p>
             <x-button.text class="text-label-large">
@@ -92,7 +92,7 @@
             <h2 class="text-center text-body-large text-foreground-secondary font-normal">Proceso de Trabajo</h2>
             <h1 class="text-center text-display-medium">¿Cómo Trabajamos en ByteBite Studio?</h1>
         </div>
-        <p class="text-body-medium text-secondary">
+        <p class="text-body-small text-secondary">
             Trabajamos en ciclos cortos: aplicamos los pasos de análisis, diseño, desarrollo y entrega para cada funcionalidad (feature) de tu proyecto. Esto nos permite avanzar de manera flexible, trabajando siempre de la mano contigo. Creemos que el cliente es parte activa del proceso, por lo que tu participación constante es esencial para lograr resultados que realmente se adapten a tus necesidades.
         </p>
         <div class="w-full divide-y divide-secondary/20">

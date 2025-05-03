@@ -22,11 +22,11 @@
                 ])
             }}
         />
-        <label for="{{ $id }}" class="text-body-medium">
+        <label for="{{ $id }}" class="text-body-small">
             {{ $label }}
         </label>
     @elseif ($type === "textarea")
-        <label for="{{ $id }}" class="text-body-medium">
+        <label for="{{ $id }}" class="text-body-small">
             {{ $label }}
             @if ($required)
                 <span class="text-red-500">*</span>
@@ -41,7 +41,7 @@
                 "required" => $required,
             ]) }}></textarea>
     @else
-        <label for="{{ $id }}" class="text-body-medium">
+        <label for="{{ $id }}" class="text-body-small">
             {{ $label }}
             @if ($required)
                 <span class="text-red-500">*</span>
