@@ -22,6 +22,32 @@ Route::get('/portfolio', [PageController::class, 'portfolio'])
     ->name('portfolio');
 
 // Todo: Fix this shit
-Route::get('/project', function () {
-    return view('layouts.project');
-})->name('project');
+Route::prefix('project')->group(function() {
+    Route::get('/hestia', function() {
+        return view('projects.hestia');
+    })->name('hestia');
+
+    Route::get('/cleanqueens', function() {
+        return view('projects.cleanqueens');
+    })->name('cleanqueens');
+    
+    Route::get('/corteza', function() {
+        return view('projects.corteza');
+    })->name('corteza');
+
+    Route::get('/ares', function() {
+        return view('projects.ares');
+    })->name('ares');
+
+    Route::get('/medrano-productions', function() {
+        return view('projects.medrano-productions');
+    })->name('medrano-productions');
+
+    Route::get('/maria-bonita', function() {
+        return view('projects.maria-bonita');
+    })->name('maria-bonita');
+
+    Route::get('/lyam-company', function() {
+        return view('projects.lyam-company');
+    })->name('lyam-company');
+});
