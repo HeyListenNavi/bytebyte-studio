@@ -5,12 +5,9 @@
 @section('body')
     <x-hero>
         <div class="flex flex-col lg:flex-row gap-4 items-center">
-            <i class="group relative bx bx-bulb !text-[120px] -z-10">
-                <i class="group-hover:opacity-100 duration-700 opacity-0 transition-opacity absolute top-0 left-0 bx bx-bulb !text-[120px] text-highlight blur-xs -z-20"></i>
-                <i class="group-hover:opacity-100 duration-700 opacity-0 transition-opacity absolute top-0 left-0 bx bx-bulb !text-[120px] text-highlight blur-xs -z-20"></i>
-                <i class="group-hover:opacity-100 duration-700 opacity-0 transition-opacity absolute top-0 left-0 bx bx-bulb !text-[120px] text-highlight blur-lg -z-20"></i>
-                <i class="group-hover:opacity-100 duration-700 opacity-0 transition-opacity absolute top-0 left-0 bx bx-bulb !text-[120px] text-highlight blur-xl -z-20"></i>
-            </i>
+            <x-glow>
+                <i class="bx bx-bulb !text-[120px]"></i>
+            </x-glow>
             <div>
                 <h1 class="text-display-medium md:text-display-large text-center md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">Servicios</h1>
                 <h3 class="text-body-medium md:text-body-large text-center md:text-start text-foreground-secondary font-normal">¡Conectamos tu negocio a la tecnología!</h3>

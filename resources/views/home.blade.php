@@ -91,7 +91,7 @@
             <h2 class="text-body-large text-foreground-secondary font-normal">Portafolio</h2>
             <h1 class="text-display-medium text-center">
                 Empresas que
-                <span class="relative after:content-['confian'] after:absolute after:top-0 after:left-0 after:text-highlight after:-z-10 after:blur-sm before:content-["confian"] before:absolute before:top-0 before:left-0 before:text-highlight before:-z-10 before:blur-sm">confian</span>
+                <x-glow class="inline-block">Confian</x-glow>
                 en nosotros
             </h1>
         </div>
