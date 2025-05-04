@@ -3,7 +3,7 @@
     'subtitle',
     'icon',
     'text',
-    'item' => [],
+    'items' => [],
     'href',
 ])
 
