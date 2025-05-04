@@ -1,8 +1,8 @@
-@extends("layouts.app")
+@extends('layouts.app')
 
-@section("title", "Nosotros")
+@section('title', 'Nosotros')
 
-@section("body")
+@section('body')
     <x-hero>
         <div class="bg-light-borders flex flex-col justify-stretch items-stretch w-fit min-h-[250px] rounded-2xl p-[1px]">
             <div class="text-headline-large from-background to-highlight-dark grow flex flex-col justify-center gap-4 rounded-2xl bg-gradient-to-br px-6 py-8 text-end">

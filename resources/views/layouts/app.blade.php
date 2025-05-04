@@ -24,7 +24,7 @@
 </head>
 
 <body class="min-h-screen bg-body flex flex-col gap-20 text-foreground bg-top bg-no-repeat">
-    @yield("body")
+    @yield('body')
     <footer class="bg-highlight-dark/10 py-48 flex items-center justify-center">
         <p class="text-secondary">© {{ date("Y") }} Propiedad de ByteBite Studio</p>
     </footer>

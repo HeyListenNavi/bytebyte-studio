@@ -1,6 +1,6 @@
 @props([
-    "title",
-    "subtitle",
+    'title',
+    'subtitle',
 ])
 
 <div class="bg-banner container mx-auto flex flex-col items-center justify-center gap-10 rounded-2xl bg-cover bg-center px-8 py-6">

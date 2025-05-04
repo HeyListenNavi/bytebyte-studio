@@ -1,8 +1,8 @@
-@extends("layouts.app")
+@extends('layouts.app')
 
-@section("title", "Servicios")
+@section('title', 'Servicios')
 
-@section("body")
+@section('body')
     <x-hero>
         <div>
             <h1 class="text-display-medium md:text-display-large text-center from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">Portafolio</h1>

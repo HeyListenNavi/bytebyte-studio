@@ -1,8 +1,8 @@
-@extends("layouts.app")
+@extends('layouts.app')
 
-@section("title", "ByteBite Studio")
+@section('title', 'ByteBite Studio')
 
-@section("body")
+@section('body')
     <x-hero>
         <div class="flex flex-col items-center md:items-start gap-6">
             <div class="flex flex-col gap-1">
@@ -96,13 +96,7 @@
             </h1>
         </div>
         <div class="relative w-full p-6 flex flex-col md:flex-row items-start gap-6 overflow-x-auto snap-x">
-            <x-proyect-preview title="Proyecto Nombre"></x-proyect-card>
-            <x-proyect-preview title="Proyecto Nombre"></x-proyect-card>
-            <x-proyect-preview title="Proyecto Nombre"></x-proyect-card>
-            <x-proyect-preview title="Proyecto Nombre"></x-proyect-card>
-            <x-proyect-preview title="Proyecto Nombre"></x-proyect-card>
-            <x-proyect-preview title="Proyecto Nombre"></x-proyect-card>
-            <x-proyect-preview title="Proyecto Nombre"></x-proyect-card>
+            <x-projects-section type="preview"></x-projects-section>
         </div>
         <x-button class="text-label-large">
             <span>Ver Más</span>
@@ -198,6 +192,6 @@
             <h2 class="text-body-large text-foreground-secondary font-normal">Contáctanos</h2>
             <h1 class="text-display-medium text-center">¿Listo para transformar tu negocio?</h1>
         </div>
-        @include("layouts.contact-form")
+        @include('layouts.contact-form')
     </div> 
 @endsection

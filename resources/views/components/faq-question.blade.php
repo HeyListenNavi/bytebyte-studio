@@ -1,8 +1,8 @@
 @props([
-    "faqs" => []
+    'faqs' => [],
 ])
 
-<ul {{ $attributes->merge(["class" => "w-full flex flex-col gap-2"]) }}>
+<ul {{ $attributes->merge(['class' => 'w-full flex flex-col gap-2']) }}>
     @foreach ($faqs as $faq)
         <li
             x-data="{ open: false }"

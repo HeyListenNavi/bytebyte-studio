@@ -1,8 +1,8 @@
-@extends("layouts.app")
+@extends('layouts.app')
 
-@section("title", "Servicios")
+@section('title', 'Servicios')
 
-@section("body")
+@section('body')
     <x-hero>
         <div class="flex flex-col lg:flex-row gap-4 items-center">
             <i class="group relative bx bx-bulb !text-[120px] -z-10">

@@ -1,12 +1,12 @@
 @props([
-    "icon",
-    "title",
-    "subtitle",
-    "text",
-    "href",
+    'icon',
+    'title',
+    'subtitle',
+    'text',
+    'href',
 ])
 
-<div {{ $attributes->merge(["class" => "min-h-[500px] border-tertiary flex w-full flex-col justify-center gap-5 rounded-2xl border px-5 py-6"]) }}>
+<div {{ $attributes->merge(['class' => 'min-h-[500px] border-tertiary flex w-full flex-col justify-center gap-5 rounded-2xl border px-5 py-6']) }}>
     <i class="bx {{ $icon }} !text-9xl"></i>
     <div>
         <h2 class="text-body-small">{{ $title }}</h2>

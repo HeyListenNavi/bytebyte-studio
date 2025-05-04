@@ -1,8 +1,8 @@
-@extends("layouts.app")
+@extends('layouts.app')
 
-@section("title", "ByteBite Studio")
+@section('title', 'ByteBite Studio')
 
-@section("body")
+@section('body')
     <x-hero>
         <div>
             <h1 class="text-display-medium md:text-display-large text-center from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">Políticas de Servicio</h1>
@@ -91,6 +91,6 @@
                 Contáctanos y te responderemos en cuanto antes
             </p>
         </div>
-        @include("layouts.contact-form")
+        @include('layouts.contact-form')
     </div>
 @endsection
