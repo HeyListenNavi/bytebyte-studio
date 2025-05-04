@@ -19,7 +19,7 @@
                 </div>
                 <i
                     class="bx bx-chevron-up transition-transform"
-                    x-bind:class="open ? "bx-rotate-180" : """    
+                    x-bind:class="open ? 'bx-rotate-180' : ''"    
                 ></i>
             </div>
             <p
