@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'ByteBite Studio')
+@section('title', 'Políticas')
 
 @section('body')
     <x-hero>

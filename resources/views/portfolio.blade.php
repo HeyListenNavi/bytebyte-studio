@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Servicios')
+@section('title', 'Portafolio')
 
 @section('body')
     <x-hero>
