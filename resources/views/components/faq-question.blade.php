@@ -18,7 +18,7 @@
                     <h1>{{ $faq["title"] }}</h1>
                 </div>
                 <i
-                    class="bx bx-chevron-up transition-transform"
+                    class="bx bx-chevron-up transition-transform self-start"
                     x-bind:class="open ? 'bx-rotate-180' : ''"    
                 ></i>
             </div>
