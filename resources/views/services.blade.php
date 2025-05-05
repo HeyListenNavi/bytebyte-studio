@@ -48,7 +48,7 @@
                     'Integración con WhatsApp y formulario de contacto',
                     'SEO básico incluido'
                 ]"
-                href="#"
+                href="{{ route('contact-us') }}"
             ></x-service>
 
             <x-service
@@ -63,7 +63,7 @@
                     'Panel de administración fácil de usar',
                     'Hosting profesional incluido'
                 ]"
-                href='#'
+                href="{{ route('contact-us') }}"
             ></x-service>
 
             <x-service
@@ -78,7 +78,7 @@
                     'Sistema de seguimiento de pedidos',
                     'Seguridad SSL premium'
                 ]"
-                href='#'
+                href="{{ route('contact-us') }}"
             ></x-service>
 
             <x-service
@@ -93,7 +93,7 @@
                     'Sincronización en tiempo real',
                     'Integración con tu base de datos'
                 ]"
-                href='#'
+                href="{{ route('contact-us') }}"
             ></x-service>
 
             <x-service
@@ -108,7 +108,7 @@
                     'Panel de gestión de conversaciones',
                     'Reportes de desempeño'
                 ]"
-                href="#"
+                href="{{ route('contact-us') }}"
             ></x-service>
 
             <x-service
@@ -123,7 +123,7 @@
                     'Reportes personalizados',
                     'Acceso multi-usuario'
                 ]"
-                href="#"
+                href="{{ route('contact-us') }}"
             ></x-service>
 
             <x-service
@@ -138,7 +138,7 @@
                     'Comparativa de herramientas',
                     '3 meses de acompañamiento'
                 ]"
-                href="#"
+                href="{{ route('contact-us') }}"
             ></x-service>
         </div>
     </div>
@@ -152,10 +152,10 @@
         subtitle="Diseñado para emprendedores y negocios que quieren crecer con tecnología accesible"
     >
         <div class="flex flex-col md:flex-row gap-4">
-            <x-button.outline class="text-label-large">
+            <x-button.outline href="{{ route('portfolio') }}" class="text-label-large">
                 <span>Ver Portafolio</span>
             </x-button.outline>
-            <x-button class="text-label-large">
+            <x-button href="{{ route('contact-us') }}" class="text-label-large">
                 <span>Cotizar Servicio</span>
                 <x-bx-arrow-up-right></x-bx-arrow-up-right>
             </x-button>

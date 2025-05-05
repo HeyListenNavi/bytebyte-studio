@@ -58,7 +58,7 @@
                 <span>EN</span>
                 <x-bx-arrow-up-right></x-bx-arrow-up-right>
             </x-button.text> --}}
-            <x-button href="#">
+            <x-button href="{{ route('contact-us') }}">
                 Contactanos
             </x-button>
         </div>

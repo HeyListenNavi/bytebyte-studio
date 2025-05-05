@@ -64,6 +64,6 @@ $projects = [
             :src="$project['src']"
         />
     @elseif ($type === 'preview')
-        <x-proyect-preview :title="$project['title']" :background="$project['src']"/>
+        <x-proyect-preview :title="$project['title']" :background="$project['src']" :href="$project['href']"/>
     @endif
 @endforeach

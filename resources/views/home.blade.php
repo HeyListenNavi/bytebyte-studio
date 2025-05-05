@@ -4,12 +4,12 @@
 
 @section('body')
     <x-hero>
-        <div class="flex flex-col items-center md:items-start gap-6">
+        <div class="flex flex-col items-end md:items-start gap-6">
             <div class="flex flex-col gap-1">
                 <h1 class="text-display-medium md:text-display-large text-end md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">ByteBite Studio</h1>
                 <h3 class="text-body-medium md:text-body-large text-end md:text-start text-foreground-secondary font-normal">El cambio que tu empresa necesita</h3>
             </div>
-            <x-button>Contactanos</x-button>
+            <x-button href="{{ route('contact-us') }}">Contactanos</x-button>
         </div>
         <div class="bg-light-borders w-full max-w-sm rounded-2xl p-[1px]">
             <div class="text-headline-large from-background to-highlight-dark flex flex-col gap-4 rounded-2xl bg-gradient-to-br px-6 py-8 text-end">
@@ -31,7 +31,7 @@
                     Queremos ayudarte a ti también
                 </h1>
             </div>
-            <x-button.text class="text-label-large self-end md:self-start">
+            <x-button.text href="{{ route('about-us') }}" class="text-label-large self-end md:self-start">
                 <span>Leer Más</span>
                 <x-bx-arrow-up-right></x-bx-arrow-up-right>
             </x-button.text>
@@ -49,24 +49,24 @@
                 title="Tu Web, Sin Complicaciones"
                 subtitle="Sitios Web"
                 text="Diseñamos sitios web rápidos y atractivos, ideales para negocios que quieren destacar en línea. Simple, profesional y listo para conectar con tus clientes. ¡Sin tecnicismos!"
-                href="#">
+                href="{{ route('services') }}">
             </x-service-card>
             <x-service-card
                 icon="bx-store"
                 title="Tienda en linea en un Click"
                 subtitle="Tiendas en Linea"
                 text="Vende tus productos en internet fácil y seguro. Nos encargamos de todo: catálogo, pagos y diseño. ¡Ideal para emprendedores que quieren crecer!"
-                href="#">
+                href="{{ route('services') }}">
             </x-service-card>
             <x-service-card
                 icon="bx-code-block"
                 title="Soluciones Web Personalizadas"
                 subtitle="Diseños a la Medida"
                 text="Automatiza tareas, organiza tu negocio y ahorra tiempo con herramientas personalizadas. Simple, eficiente y hecho para ti."
-                href="#">
+                href="{{ route('services') }}">
             </x-service-card>
         </div>
-        <x-button.text class="text-label-large">
+        <x-button.text href="{{ route('services') }}" class="text-label-large">
             <span>Ver todos los Servicios</span>
             <i class="bx bx-chevron-right"></i>
         </x-button.text>
@@ -80,7 +80,7 @@
         "
         subtitle="Diseñado para emprendedores y negocios que quieren crecer con tecnología accesible"
     >
-        <x-button class="text-label-large">
+        <x-button href="{{ route('contact-us') }}" class="text-label-large">
             <span>Comienza Ahora</span>
             <x-bx-arrow-up-right></x-bx-arrow-up-right>
         </x-button>
@@ -98,7 +98,7 @@
         <div class="relative w-full p-6 flex flex-col md:flex-row items-start gap-6 overflow-x-auto snap-x">
             <x-projects-section type="preview"></x-projects-section>
         </div>
-        <x-button class="text-label-large">
+        <x-button href="{{ route('portfolio') }}" class="text-label-large">
             <span>Ver Más</span>
             <x-bx-arrow-up-right></x-bx-arrow-up-right>
         </x-button>
@@ -120,6 +120,7 @@
                     'Integración con WhatsApp y formulario de contacto',
                     'Galería de fotos'
                 ]"
+                href="{{ route('contact-us') }}"
             ></x-plan-card>
 
             <x-plan-card
@@ -132,6 +133,7 @@
                     'Optimización básica para motores de búsqueda (SEO)',
                     'Panel de administración fácil de usar'
                 ]"
+                href="{{ route('contact-us') }}"
             ></x-plan-card>
 
             <x-plan-card
@@ -144,6 +146,7 @@
                     'Gestión de pedidos y notificaciones automáticas',
                     'Seguridad reforzada para transacciones'
                 ]"
+                href="{{ route('contact-us') }}"
             ></x-plan-card>
         </div>
     </div>
@@ -181,7 +184,7 @@
                 ],
             ]"
         ></x-faq-question>
-        <x-button.text class="text-label-large">
+        <x-button.text href="{{ route('faq') }}" class="text-label-large">
             <span>¿Tienes mas preguntas?</span>
             <i class="bx bx-chevron-right"></i>
         </x-button.text>

@@ -9,7 +9,7 @@
 
 <div {{ $attributes->merge(['class' => 'flex flex-col lg:flex-row items-center gap-8 py-10']) }}>
     <i class="bx {{ $icon }} !text-[160px]"></i>
-    <div class="flex flex-col gap-6">
+    <div class="w-full flex flex-col gap-6">
         <div class="flex flex-col gap-1">
             <h2 class="text-body-large text-foreground font-normal">{{ $subtitle }}</h2>
             <h1 class="text-headline-large">{{ $title }}</h1>

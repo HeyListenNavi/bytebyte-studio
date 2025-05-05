@@ -27,7 +27,7 @@
                             Simple, funcional y lista para llevarte al siguiente nivel.
                         </span>
                     </p>
-                    <x-button class="text-label-large">
+                    <x-button href="{{ route('services') }}" class="text-label-large">
                         <span>Comenzar</span>
                         <x-bx-arrow-up-right></x-bx-arrow-up-right>
                     </x-button> 
@@ -46,7 +46,7 @@
             <p class="text-body-small text-secondary">
                 Nos especializamos en el desarrollo de software a medida, aplicaciones web y móviles que se adaptan a las necesidades específicas de tu negocio. Desde la idea hasta la implementación, te acompañamos en cada paso del proceso para crear soluciones tecnológicas que optimicen tu operación y mejoren tu presencia digital.
             </p>
-            <x-button.text class="text-label-large">
+            <x-button.text href="{{ route('contact-us') }}" class="text-label-large">
                 <span>Cotizar Servicio</span>
                 <i class="bx bx-chevron-right"></i>
             </x-button.text>
@@ -149,16 +149,16 @@
         title="Proveemos soluciones que escalan junto con tu negocio"
         subtitle="¿Qué nos diferencia?"
     >
-        <x-button class="text-label-large">
+        <x-button href="{{ route('contact-us') }}" class="text-label-large">
             <span>Digitalízate Ya</span>
             <x-bx-arrow-up-right></x-bx-arrow-up-right>
         </x-button>
     </x-banner>
 
-    <div class="container mx-auto px-4 flex flex-col items-center align-middle justify-center gap-10">
+    {{-- <div class="container mx-auto px-4 flex flex-col items-center align-middle justify-center gap-10">
         <div class="flex flex-col items-center gap-6">
             <h2 class="text-center text-body-large text-foreground-secondary font-normal">Nuestro Equipo</h2>
             <h1 class="text-center text-display-medium">¡Conoce al Equipo!</h1>
         </div>
-    </div>
+    </div> --}}
 @endsection
