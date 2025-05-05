@@ -53,10 +53,11 @@
                     class="text-body-small">Portafolio</x-button.text></li>
         </ul>
         <div class="flex flex-row-reverse items-center gap-4 lg:flex-row">
-            <x-button.text>
+            {{-- TODO: Translate ByteBite Studio --}}
+            {{-- <x-button.text>
                 <span>EN</span>
                 <x-bx-arrow-up-right></x-bx-arrow-up-right>
-            </x-button.text>
+            </x-button.text> --}}
             <x-button href="#">
                 Contactanos
             </x-button>
