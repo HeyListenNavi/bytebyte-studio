@@ -12,7 +12,7 @@
                     @yield('subtitle')
                 </h2>
             </div>
-            <x-button.text :href="$href" class="text-label-large self-start">
+            <x-button.text :href="$href" class="text-label-large self-end lg:self-start">
                 Ver proyecto
                 <x-bx-arrow-up-right></x-bx-arrow-up-right>
             </x-button.text>
