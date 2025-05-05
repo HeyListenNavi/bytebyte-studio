@@ -21,6 +21,9 @@ Route::get('/policies', [PageController::class, 'policies'])
 Route::get('/portfolio', [PageController::class, 'portfolio'])
     ->name('portfolio');
 
+Route::get('/contact-us', [PageController::class, 'contact'])
+    ->name('contact-us');
+
 // Todo: Fix this shit
 Route::prefix('project')->group(function() {
     Route::get('/hestia', function() {
