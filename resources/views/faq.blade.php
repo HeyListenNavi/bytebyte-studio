@@ -4,7 +4,7 @@
 
 @section('body')
     <x-hero>
-        <div>
+        <div class="col-span-2">
             <h3 class="text-body-medium md:text-body-large text-center text-foreground-secondary font-normal">Preguntas Frecuentes</h3>
             <h1 class="text-display-medium md:text-display-large text-center from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">¿Tienes dudas? Aquí están las respuestas</h1>
         </div>
@@ -90,6 +90,6 @@
                 Contáctanos y te responderemos en cuanto antes
             </p>
         </div>
-        @include('layouts.contact-form')
+        @include('layouts.contact-section')
     </div>
 @endsection

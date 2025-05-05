@@ -192,6 +192,6 @@
             <h2 class="text-body-large text-foreground-secondary font-normal">Contáctanos</h2>
             <h1 class="text-display-medium text-center">¿Listo para transformar tu negocio?</h1>
         </div>
-        @include('layouts.contact-form')
+        @include('layouts.contact-section')
     </div> 
 @endsection

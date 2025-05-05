@@ -4,7 +4,7 @@
 
 @section('body')
     <x-hero>
-        <div class="flex flex-col lg:flex-row gap-4 items-center">
+        <div class="col-span-2 flex flex-col lg:flex-row gap-4 items-center">
             <x-glow>
                 <i class="bx bx-bulb !text-[120px]"></i>
             </x-glow>
