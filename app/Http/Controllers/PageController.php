@@ -34,4 +34,8 @@ class PageController extends Controller
     public function contact() {
         return view('contact-form');
     }
+
+    public function sent() {
+        return view('sent-correctly');
+    }
 }
