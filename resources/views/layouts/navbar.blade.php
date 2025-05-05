@@ -1,6 +1,6 @@
 <nav
     x-data="{ displayMenu: false }"
-    class="bg-glass relative flex w-full items-center justify-center p-8 shadow-2xl backdrop-blur-lg"
+    class="z-50 bg-glass relative flex w-full items-center justify-center p-8 shadow-2xl backdrop-blur-lg"
 >
     <div class="container flex items-center justify-between">
         <ul
@@ -8,7 +8,7 @@
             x-cloak
             x-on:click.outside="displayMenu = false"
             x-transition
-            class="lg:hidden z-100 bg-glass divide-secondary/20 absolute left-1/2 top-[120%] w-11/12 -translate-x-1/2 gap-6 divide-y rounded-2xl p-4 backdrop-blur-lg"
+            class="lg:hidden bg-glass divide-secondary/20 absolute left-1/2 top-[120%] w-11/12 -translate-x-1/2 gap-6 divide-y rounded-2xl p-4 backdrop-blur-lg"
         >
             <div class="divide-secondary/20 flex flex-col gap-4 divide-y py-4">
                 <h1 class="text-headline-large px-2 py-4 lg:hidden">ByteBite Studio</h1>
