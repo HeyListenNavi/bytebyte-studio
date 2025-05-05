@@ -19,25 +19,6 @@
     </div>
 
     <div class="container mx-auto px-4 grid md:grid-cols-2 items-center justify-center gap-16">
-        <x-proyect-card
-            title="Proyecto"
-            description="Ayudamos a empresas a construir su espacio en linea y expandir su alcance"
-            href="#"
-        ></x-proyect-card>
-        <x-proyect-card
-            title="Proyecto"
-            description="Ayudamos a empresas a construir su espacio en linea y expandir su alcance"
-            href="#"
-        ></x-proyect-card>
-        <x-proyect-card
-            title="Proyecto"
-            description="Ayudamos a empresas a construir su espacio en linea y expandir su alcance"
-            href="#"
-        ></x-proyect-card>
-        <x-proyect-card
-            title="Proyecto"
-            description="Ayudamos a empresas a construir su espacio en linea y expandir su alcance"
-            href="#"
-        ></x-proyect-card>
+        <x-projects-section type="card"></x-projects-section>
     </div>
 @endsection
