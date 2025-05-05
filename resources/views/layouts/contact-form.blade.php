@@ -1,7 +1,7 @@
 <div class="grid w-full gap-20 md:grid-cols-2">
     <div class="bg-radial-[at_50%_0] from-secondary to-background/10 rounded-2xl to-90% px-[1px] pt-[1px]">
         <form class="bg-background flex flex-col gap-6 rounded-2xl px-4 py-6">
-            <fieldset class="grid lg:grid-cols-2 gap-6">
+            <fieldset class="grid xl:grid-cols-2 gap-6">
                 <x-form-input label="Nombre" id="name" placeholder="Tu nombre" :required="true"></x-form-input>
                 <x-form-input label="Apellido" id="lastName" placeholder="Tu apellido" :required="true"></x-form-input>
             </fieldset>
