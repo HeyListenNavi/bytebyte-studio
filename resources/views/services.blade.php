@@ -5,9 +5,16 @@
 @section('body')
     <x-hero>
         <div class="col-span-2 flex flex-col lg:flex-row gap-4 items-center">
-            <x-glow>
-                <i class="bx bx-bulb !text-[120px]"></i>
-            </x-glow>
+        <i
+            x-data="powerSequence"
+            x-bind:class="
+                {
+                    'glow-off': !powered,
+                    'glow-on': powered,
+                }
+            "
+            class="bx bx-bulb !text-[120px]"
+            ></i>
             <div>
                 <h1 class="text-display-medium md:text-display-large text-center md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">Servicios</h1>
                 <h3 class="text-body-medium md:text-body-large text-center md:text-start text-foreground-secondary font-normal">¡Conectamos tu negocio a la tecnología!</h3>
