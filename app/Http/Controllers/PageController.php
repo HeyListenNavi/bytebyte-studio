@@ -32,7 +32,7 @@ class PageController extends Controller
 
     
     public function contact() {
-        return view('contact-form');
+        return view('contact-us');
     }
 
     public function sent() {
