@@ -29,7 +29,7 @@
         <div class="flex flex-col gap-6 py-10">
             <div class="flex flex-col gap-1">
                 <h3 class="text-label-large">Llamada Directa</h3>
-                <p class="text-body-medium text-foreground-secondary">¿Prefieres hablar por teléfono? Llámanos al
+                <p class="text-body-small text-foreground-secondary">¿Prefieres hablar por teléfono? Llámanos al
                     siguiente número:</p>
             </div>
             <x-button.text href="tel:+526642677530" target="_blank" class="text-body-medium font-bold text-highlight underline">+52 (664) 267

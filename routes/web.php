@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,7 +27,10 @@ Route::get('/contact-us', [PageController::class, 'contact'])
 
 Route::get('/sent', [PageController::class, 'sent'])
     ->name('sent');
-    
+   
+Route::post('/contact', [ContactController::class, 'submit'])
+    ->name('contact.submit');
+
 // Todo: Fix this shit
 Route::prefix('project')->group(function() {
     Route::get('/hestia', function() {
