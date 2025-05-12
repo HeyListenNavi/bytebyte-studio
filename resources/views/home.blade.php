@@ -95,8 +95,37 @@
                 en nosotros
             </h1>
         </div>
-        <div class="relative w-full p-6 flex flex-col md:flex-row items-start gap-6 overflow-x-auto snap-x">
-            <x-projects-section type="preview"></x-projects-section>
+        <div
+            x-data
+            class="relative max-w-full"
+        >
+            <div x-ref="scroll" class="flex flex-row items-start py-6 px-24 gap-2 lg:gap-6 overflow-auto snap-x snap-mandatory" style="scrollbar-width: none;">
+                <x-projects-section type="preview"></x-projects-section>
+            </div>
+
+            <div class="w-full absolute top-1/2 -translate-y-1/2 left-0 flex justify-between z-10 pointer-events-none px-0 md:px-2">
+                    <i
+                        x-data="{ pressed: false }"
+                        x-on:mousedown="pressed = true"
+                        x-on:mouseup="pressed = false"
+                        x-on:touchstart.passive="pressed = true"
+                        x-on:touchend.passive="pressed = false"
+                        x-on:click="$refs.scroll.scrollBy({ left: -300, behavior: 'smooth' })"
+                        x-bind:class="{ 'scale-90': pressed,}"
+                        class="bx bx-chevron-left p-3 rounded-full cursor-pointer bg-highlight-dark pointer-events-auto transition-transform"
+                    ></i>
+
+                    <i
+                        x-data="{ pressed: false }"
+                        x-on:mousedown="pressed = true"
+                        x-on:mouseup="pressed = false"
+                        x-on:touchstart.passive="pressed = true"
+                        x-on:touchend.passive="pressed = false"
+                        x-on:click="$refs.scroll.scrollBy({ left: 300, behavior: 'smooth' })"
+                        x-bind:class="{ 'scale-90': pressed,}"
+                        class="bx bx-chevron-right p-3 rounded-full cursor-pointer bg-highlight-dark pointer-events-auto transition-transform"
+                    ></i>
+            </div>
         </div>
         <x-button href="{{ route('portfolio') }}" class="text-label-large">
             <span>Ver Más</span>
