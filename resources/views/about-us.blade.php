@@ -5,7 +5,7 @@
 @section('body')
     <x-hero>
         <div class="col-span-2 flex flex-col lg:flex-row gap-8 items-center">
-            <div class="bg-light-borders flex flex-col justify-stretch items-stretch w-fit min-h-[250px] rounded-2xl p-[1px]">
+            <div class="hidden lg:flex bg-light-borders flex-col justify-stretch items-stretch w-fit min-h-[250px] rounded-2xl p-[1px]">
                 <div class="text-headline-large from-background to-highlight-dark grow flex flex-col justify-center gap-4 rounded-2xl bg-gradient-to-br px-6 py-8 text-end">
                     <h2>Simple.</h2>
                     <h2>Eficiente.</h2>
@@ -18,7 +18,7 @@
                     <h1 class="text-display-medium md:text-display-large text-center md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">El cambio que tu empresa necesita</h1>
                 </div>
                 <div class="w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-between items-center">
-                    <p class="text-body-small md:text-body-medium text-secondary">
+                    <p class="text-body-small md:text-body-medium text-secondary text-center md:text-start">
                         <span>
                             En ByteBite Studio transformamos tu negocio con tecnología que se adapta a ti:
                         </span>
