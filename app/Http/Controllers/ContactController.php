@@ -18,7 +18,7 @@ class ContactController extends Controller
             'email' => 'nullable|email|max:150',
             'phone' => 'required|string|max:20',
             'contactMessage' => 'required|string',
-            'services' => 'nullable|array',
+            'services' => 'required|array',
             'services.*' => 'string',
         ];
 
@@ -29,6 +29,7 @@ class ContactController extends Controller
             'email.email' => 'Ingresa un correo electrónico válido.',
             'phone.required' => 'El teléfono es obligatorio.',
             'contactMessage.required' => 'El mensaje es obligatorio.',
+            'services.required' => 'Los servicios de interés son obligatorios'
         ];
 
         $validated = $request->validate($rules, $messages);
@@ -41,7 +42,7 @@ class ContactController extends Controller
                 $validated['email'] ?? null,
                 $validated['phone'],
                 $validated['contactMessage'],
-                $validated['services'] ?? [],
+                $validated['services'],
             ));
 
         return redirect()->route('sent');

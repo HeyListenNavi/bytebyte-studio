@@ -27,10 +27,13 @@
         <x-form-input label="¿Cómo podemos ayudarte?" id="contactMessage" placeholder="Cuéntanos como podemos ayudarte" :required="true" type="textarea"></x-form-input>
 
         <fieldset class="flex flex-col gap-4">
-            <legend class="text-body-small mb-2">¿Qué servicios te interesan?</legend>
+            <legend class="text-body-small mb-2">
+                ¿Qué servicios te interesan?
+                <span class="text-red-500">*</span>
+            </legend>
 
             <fieldset class="grid gap-4 lg:grid-cols-2">
-                <x-form-input label="Landing Page" id="landingPage" name="services[]" type="checkbox"></x-form-input>
+                <x-form-input label="Landing Page" id="landingPage" name="services[]" type="checkbox" :required="true"></x-form-input>
 
                 <x-form-input label="Tienda en Línea" id="ecommerce" name="services[]" type="checkbox"></x-form-input>
 
