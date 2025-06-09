@@ -17,13 +17,7 @@ class ContactMessage extends Mailable
      * Create a new message instance.
      */
     public function __construct(
-        public $name,
-        public $lastName,
-        public $company,
-        public $email = null,
-        public $phone,
-        public $contactMessage,
-        public $services = [],
+        public $data,
     ) {}
 
     /**
@@ -44,13 +38,13 @@ class ContactMessage extends Mailable
         return new Content(
             view: 'emails.contact-message',
             with: [
-                'name' => $this->name,
-                'lastName' => $this->lastName,
-                'company' => $this->company,
-                'email' => $this->email,
-                'phone' => $this->phone,
-                'contactMessage' => $this->contactMessage,
-                'services' => $this->services,
+                'name' => $this->data['name'],
+                'lastName' => $this->data['lastName'],
+                'company' => $this->data['company'],
+                'email' => $this->data['email'],
+                'phone' => $this->data['phone'],
+                'contactMessage' => $this->data['contactMessage'],
+                'services' => $this->data['services'],
             ],
         );
     }

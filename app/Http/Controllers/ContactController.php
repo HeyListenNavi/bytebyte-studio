@@ -33,17 +33,10 @@ class ContactController extends Controller
         ];
 
         $validated = $request->validate($rules, $messages);
-
-        Mail::to('vero.guzmanochoa@gmail.com')
-            ->send(new ContactMessage(
-                $validated['name'],
-                $validated['lastName'],
-                $validated['company'],
-                $validated['email'] ?? null,
-                $validated['phone'],
-                $validated['contactMessage'],
-                $validated['services'],
-            ));
+        
+        Mail::to($validated['email'])
+            ->cc(env("MAIL_TO"))
+            ->send(new ContactMessage($validated));
 
         return redirect()->route('sent');
     }
