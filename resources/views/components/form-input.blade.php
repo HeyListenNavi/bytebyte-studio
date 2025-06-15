@@ -4,7 +4,6 @@
     'name' => $id,
     'placeholder' => '',
     'required' => false,
-    'value' => $label,
     'type' => 'text',
 ])
 
@@ -17,7 +16,7 @@
                     'type' => $type,
                     'name' => $name,
                     'id' => $id,
-                    'value' => $value,
+                    'value' => $label,
                     'required' => $required,
                 ])
             }}
@@ -39,7 +38,7 @@
                 'id' => $id,
                 'placeholder' => $placeholder,
                 'required' => $required,
-            ]) }}></textarea>
+            ]) }}>{{ $slot }}</textarea>
     @else
         <label for="{{ $id }}" class="text-body-small">
             {{ $label }}
