@@ -18,8 +18,9 @@ class ContactController extends Controller
             'email' => 'nullable|email|max:150',
             'phone' => 'required|string|max:20',
             'contactMessage' => 'required|string',
-            'services' => 'required|array',
+            'services' => 'required|array|min:1',
             'services.*' => 'string',
+            'g-recaptcha-response' => 'required',
         ];
 
         $messages = [
@@ -29,7 +30,9 @@ class ContactController extends Controller
             'email.email' => 'Ingresa un correo electrónico válido.',
             'phone.required' => 'El teléfono es obligatorio.',
             'contactMessage.required' => 'El mensaje es obligatorio.',
-            'services.required' => 'Los servicios de interés son obligatorios'
+            'services.required' => 'Los servicios de interés son obligatorios',
+            'services.min' => 'Seleccione al menos un servicio',
+            'g-recaptcha-response.required' => 'Por favor complete el captcha para continuar'
         ];
 
         $validated = $request->validate($rules, $messages);

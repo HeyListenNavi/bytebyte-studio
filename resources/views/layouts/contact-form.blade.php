@@ -75,7 +75,7 @@
             </legend>
 
             <fieldset class="grid gap-4 lg:grid-cols-2">
-                <x-form-input label="Landing Page" id="landingPage" name="services[]" type="checkbox" :required="true"></x-form-input>
+                <x-form-input label="Landing Page" id="landingPage" name="services[]" type="checkbox"></x-form-input>
 
                 <x-form-input label="Tienda en Línea" id="ecommerce" name="services[]" type="checkbox"></x-form-input>
 
@@ -93,7 +93,9 @@
             </fieldset>
         </fieldset>
 
-        <x-button class="g-recaptcha text-label-large self-end">
+        <div class="g-recaptcha mt-4" data-sitekey={{config('captcha.sitekey')}}></div>
+        
+        <x-button class="g-recaptcha text-label-large self-end" type="submit">
             <span>Contactanos</span>
             <x-bx-arrow-up-right></x-bx-arrow-up-right>
         </x-button>
