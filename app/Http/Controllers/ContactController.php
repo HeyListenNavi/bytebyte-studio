@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactMessage;
-use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Http;
 
 class ContactController extends Controller
 {
@@ -36,7 +36,19 @@ class ContactController extends Controller
         ];
 
         $validated = $request->validate($rules, $messages);
-        
+
+        //Validating ReCaptcha
+        $recaptcha_response = $validated["g-recaptcha-response"];
+        $g_response = Http::asForm()->withOptions([
+                'verify' => false,
+            ])
+            ->post("https://www.google.com/recaptcha/api/siteverify",[
+                "secret" => config("services.recaptcha.secret_key"),
+                "response" => $recaptcha_response,
+                "remoteip" => $request->ip()
+            ]
+        );
+
         Mail::to($validated['email'])
             ->cc(env("MAIL_TO"))
             ->send(new ContactMessage($validated));

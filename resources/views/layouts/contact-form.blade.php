@@ -23,10 +23,10 @@
                 label="Nombre"
                 id="name"
                 placeholder="Tu nombre"
-                :required="true" 
+                :required="true"
                 value="{{ old('name') }}"
             ></x-form-input>
-            
+
             <x-form-input
                 label="Apellido"
                 id="lastName"
@@ -38,7 +38,7 @@
 
         <x-form-input
             label="Nombre de la Empresa"
-            id="company" 
+            id="company"
             placeholder="Nombre de la Empresa"
             :required="true"
             value="{{ old('company') }}"
@@ -52,18 +52,18 @@
         ></x-form-input>
 
         <x-form-input
-            label="Teléfono" 
-            id="phone" 
-            placeholder="+12 (345) 678 9101" 
+            label="Teléfono"
+            id="phone"
+            placeholder="+12 (345) 678 9101"
             :required="true"
             value="{{ old('phone') }}"
         ></x-form-input>
 
         <x-form-input
-            label="¿Cómo podemos ayudarte?" 
+            label="¿Cómo podemos ayudarte?"
             id="contactMessage"
-            placeholder="Cuéntanos como podemos ayudarte" 
-            :required="true" 
+            placeholder="Cuéntanos como podemos ayudarte"
+            :required="true"
             type="textarea"
              style="white-space: pre-line"
         >{{ old('contactMessage') }}</x-form-input>
@@ -93,9 +93,13 @@
             </fieldset>
         </fieldset>
 
-        <div class="g-recaptcha mt-4" data-sitekey={{config('captcha.sitekey')}}></div>
-        
-        <x-button class="g-recaptcha text-label-large self-end" type="submit">
+        {{-- <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.site_key')}}></div> --}}
+
+        <x-button class="g-recaptcha text-label-large self-end"
+                data-sitekey="{{ config('services.recaptcha.site_key') }}"
+                data-callback="onSubmit"
+                data-action="register"
+                type="submit">
             <span>Contactanos</span>
             <x-bx-arrow-up-right></x-bx-arrow-up-right>
         </x-button>
