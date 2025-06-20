@@ -50,7 +50,7 @@ class ContactController extends Controller
         );
 
         Mail::to($validated['email'])
-            ->cc(env("MAIL_TO"))
+            ->bcc(env("SITE_OWNER"), env("COPY_TO"))
             ->send(new ContactMessage($validated));
 
         return redirect()->route('sent');
