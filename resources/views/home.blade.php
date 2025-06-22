@@ -20,8 +20,48 @@
         </div>
     </x-hero>
 
+    <div class="container mx-auto px-4 flex flex-col items-center justify-center gap-10">
+        <div class="flex flex-col items-center gap-1">
+            <h2 class="text-body-large text-foreground-secondary font-normal text-center">¿Quieres un agente de IA trabajando para ti?</h2>
+            <h1 class="text-display-medium text-center">Automatiza tu negocio con agentes de IA</h1>
+        </div>
+        <div class="flex flex-col lg:grid lg:grid-cols-[30%_1fr_30%] items-center w-full gap-10">
+            <div class="rounded-2xl overflow-hidden h-[400px] pt-[1px] px-[1px] bg-radial-[at_50%_0] from-secondary to-background/10 to-90%">
+                <x-service-card
+                    icon="bx-support"
+                    title="Agentes que conversan con tus clientes 24/7"
+                    text="WhatsApp, redes sociales o tu web"
+                    class="bg-[#090b0d] border-0"
+                >
+                </x-service-card>
+            </div>
+            <div class="rounded-2xl overflow-hidden h-[500px] pt-[1px] px-[1px] bg-radial-[at_50%_0] from-secondary to-background/10 to-90%">
+                <x-service-card
+                    icon="bx-message-square-dots"
+                    title="Respuestas automáticas y personalizadas"
+                    text="Basadas en tus productos y estilo"
+                    class="bg-[#090b0d] border-0"
+                >
+                </x-service-card>
+            </div>
+            <div class="rounded-2xl overflow-hidden h-[400px] pt-[1px] px-[1px] bg-radial-[at_50%_0] from-secondary to-background/10 to-90%">
+                <x-service-card
+                    icon="bx-chart"
+                    title="Procesos internos sin fricción"
+                    text="Automatizamos desde cotizaciones hasta reportes"
+                    class="bg-[#090b0d] border-0"
+                >
+                </x-service-card>
+            </div>
+        </div>
+        <x-button.text href="https://api.whatsapp.com/send?phone=5216642677530&text=Hola!%20Me%20gustaria%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20automatizaciones%20con%20agentes%20de%20IA%2C%20podemos%20agendar%20una%20demo%20gratuita%3F" target="_blank" class="text-label-large">
+            <span>Agenda una demo gratuita</span>
+            <i class="bx bx-chevron-right"></i>
+        </x-button.text>
+    </div>
+
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-10">
-        <img class="max-w-lg w-full" src="{{ Vite::asset("resources/images/about-us-laptop.png") }}" alt="">
+        <img class="max-w-lg w-full bg-circular-gradient" src="{{ Vite::asset("resources/images/about-us-laptop.png") }}" alt="">
         <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-1">
                 <h2 class="text-body-large text-foreground-secondary font-normal">Nosotros</h2>
@@ -46,24 +86,30 @@
         <div class="flex flex-col lg:flex-row w-full gap-10">
             <x-service-card
                 icon="bx-compass"
-                title="Tu Web, Sin Complicaciones"
-                subtitle="Sitios Web"
+                subtitle="Tu Web, Sin Complicaciones"
+                title="Sitios Web"
                 text="Diseñamos sitios web rápidos y atractivos, ideales para negocios que quieren destacar en línea. Simple, profesional y listo para conectar con tus clientes. ¡Sin tecnicismos!"
-                href="{{ route('services') }}">
+                href="{{ route('services') }}"
+                class="min-h-[500px]"
+            >
             </x-service-card>
             <x-service-card
                 icon="bx-store"
-                title="Tienda en linea en un Click"
-                subtitle="Tiendas en Linea"
+                subtitle="Tienda en linea en un Click"
+                title="Tiendas en Linea"
                 text="Vende tus productos en internet fácil y seguro. Nos encargamos de todo: catálogo, pagos y diseño. ¡Ideal para emprendedores que quieren crecer!"
-                href="{{ route('services') }}">
+                href="{{ route('services') }}"
+                class="min-h-[500px]"
+            >
             </x-service-card>
             <x-service-card
                 icon="bx-code-block"
-                title="Soluciones Web Personalizadas"
-                subtitle="Diseños a la Medida"
+                subtitle="Soluciones Web Personalizadas"
+                title="Diseños a la Medida"
                 text="Automatiza tareas, organiza tu negocio y ahorra tiempo con herramientas personalizadas. Simple, eficiente y hecho para ti."
-                href="{{ route('services') }}">
+                href="{{ route('services') }}"
+                class="min-h-[500px]"
+            >
             </x-service-card>
         </div>
         <x-button.text href="{{ route('services') }}" class="text-label-large">
