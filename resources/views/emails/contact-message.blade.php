@@ -94,7 +94,7 @@
     <div class="email">
         <div>
             <div>
-                <h1>ByteBite Studio</h1>
+                <h1>ByteByte Studio</h1>
                 <h3>Nuevo Mensaje de Contacto</h3>
             </div>
         </div>

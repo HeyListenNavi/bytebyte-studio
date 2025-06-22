@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'ByteBite Studio')
+@section('title', 'ByteByte Studio')
 
 @section('body')
     <x-hero>
         <div class="flex flex-col items-end md:items-start gap-6">
             <div class="flex flex-col gap-1">
-                <h1 class="text-display-medium md:text-display-large text-end md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">ByteBite Studio</h1>
+                <h1 class="text-display-medium md:text-display-large text-end md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">ByteByte Studio</h1>
                 <h3 class="text-body-medium md:text-body-large text-end md:text-start text-foreground-secondary font-normal">El cambio que tu empresa necesita</h3>
             </div>
             <x-button href="{{ route('contact-us') }}">Contactanos</x-button>

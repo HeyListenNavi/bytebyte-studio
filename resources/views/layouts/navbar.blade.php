@@ -5,7 +5,7 @@
     <div class="container mx-auto lg:flex lg:flex-row-reverse lg:justify-between">
         <div class="flex items-center justify-between">
             <div class="flex flex-row-reverse items-center gap-4 lg:flex-row">
-                {{-- TODO: Translate ByteBite Studio --}}
+                {{-- TODO: Translate ByteByte Studio --}}
                 {{-- <x-button.text>
                     <span>EN</span>
                     <x-bx-arrow-up-right></x-bx-arrow-up-right>
@@ -27,7 +27,7 @@
             class="w-full flex lg:!flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:divide-x divide-secondary/20 py-4"
         >
             <div class="divide-secondary/20 flex flex-col lg:gap-4 lg:flex-row divide-y lg:divide-y-0 lg:px-4">
-                <h1 class="text-headline-large px-2 py-6 lg:hidden">ByteBite Studio</h1>
+                <h1 class="text-headline-large px-2 py-6 lg:hidden">ByteByte Studio</h1>
                 <li class="px-2 py-6 lg:p-0">
                     <x-button.text href="{{ route('home') }}" class="text-label-large font-normal lg:text-body-small">
                         Inicio

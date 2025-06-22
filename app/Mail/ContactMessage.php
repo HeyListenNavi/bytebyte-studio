@@ -26,7 +26,7 @@ class ContactMessage extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: '¡Nuevo mensaje para ByteBite Studio!',
+            subject: '¡Nuevo mensaje para ByteByte Studio!',
         );
     }
 

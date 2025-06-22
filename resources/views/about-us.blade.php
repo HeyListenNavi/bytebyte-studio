@@ -14,13 +14,13 @@
             </div>
             <div class="flex flex-col items-center md:items-start gap-6">
                 <div>
-                    <h3 class="text-body-medium md:text-body-large text-center md:text-start text-foreground-secondary font-normal">ByteBite Studio</h3>
+                    <h3 class="text-body-medium md:text-body-large text-center md:text-start text-foreground-secondary font-normal">ByteByte Studio</h3>
                     <h1 class="text-display-medium md:text-display-large text-center md:text-start from-foreground to-foreground-tertiary bg-gradient-to-r from-40% to-90% bg-clip-text text-transparent">El cambio que tu empresa necesita</h1>
                 </div>
                 <div class="w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-between items-center">
                     <p class="text-body-small md:text-body-medium text-secondary text-center md:text-start">
                         <span>
-                            En ByteBite Studio transformamos tu negocio con tecnología que se adapta a ti:
+                            En ByteByte Studio transformamos tu negocio con tecnología que se adapta a ti:
                         </span>
                         <br>
                         <span class="font-bold">
@@ -92,7 +92,7 @@
     <div class="container mx-auto px-4 flex flex-col items-center align-middle justify-center gap-10">
         <div class="flex flex-col items-center gap-6">
             <h2 class="text-center text-body-large text-foreground-secondary font-normal">Proceso de Trabajo</h2>
-            <h1 class="text-center text-display-medium">¿Cómo Trabajamos en ByteBite Studio?</h1>
+            <h1 class="text-center text-display-medium">¿Cómo Trabajamos en ByteByte Studio?</h1>
         </div>
         <p class="text-body-small text-secondary">
             Trabajamos en ciclos cortos: aplicamos los pasos de análisis, diseño, desarrollo y entrega para cada funcionalidad (feature) de tu proyecto. Esto nos permite avanzar de manera flexible, trabajando siempre de la mano contigo. Creemos que el cliente es parte activa del proceso, por lo que tu participación constante es esencial para lograr resultados que realmente se adapten a tus necesidades.

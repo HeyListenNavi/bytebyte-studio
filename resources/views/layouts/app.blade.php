@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>@yield("title", "ByteBite Studio")</title>
+    <title>@yield("title", "ByteByte Studio")</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fonts -->
@@ -29,7 +29,7 @@
 
     @yield('body')
     <footer class="bg-highlight-dark/10 py-48 flex items-center justify-center">
-        <p class="text-secondary">© {{ date("Y") }} Propiedad de ByteBite Studio</p>
+        <p class="text-secondary">© {{ date("Y") }} Propiedad de ByteByte Studio</p>
     </footer>
 </body>
 
