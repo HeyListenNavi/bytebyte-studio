@@ -92,10 +92,8 @@
                 <x-form-input label="Otro" id="other" name="services[]" type="checkbox"></x-form-input>
             </fieldset>
         </fieldset>
-
-        {{-- <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.site_key')}}></div> --}}
-
-        <x-button class="g-recaptcha text-label-large self-end"
+        
+        <x-button class="text-label-large self-end"
                 data-sitekey="{{ config('services.recaptcha.site_key') }}"
                 data-callback="onSubmit"
                 data-action="register"
