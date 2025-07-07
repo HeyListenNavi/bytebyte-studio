@@ -19,7 +19,7 @@
         </div>
         <img class="w-full max-w-2xl" src=@yield('thumbnail') alt="">
     </x-hero>
-    <div class="container mx-auto grid items-center gap-4 px-4 lg:grid-cols-2">
+    <div class="container mx-auto grid items-center gap-4 px-4 justify-items-center lg:grid-cols-2">
         <img class="w-full max-w-2xl rounded-2xl" src=@yield('mockup-one') alt="">
         <div class="flex flex-col gap-4">
             <h2 class="text-display-medium">¿Quiénes Son?</h2>
@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    <div class="container mx-auto grid items-center gap-4 px-4 lg:grid-cols-2">
+    <div class="container mx-auto grid items-center gap-4 px-4 justify-items-center lg:grid-cols-2">
         <div class="flex flex-col gap-4">
             <h2 class="text-display-medium">¿Cómo les ayudamos?</h2>
             <div class="text-body-small text-foreground-secondary">

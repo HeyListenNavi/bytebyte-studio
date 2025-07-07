@@ -51,6 +51,13 @@ $projects = [
         'href' => route('lyam-company'),
         'src' => Vite::mockup('lyam-thumbnail.png'),
     ],
+    [
+        'title' => 'Cerealis',
+        'subtitle' => 'El futuro de la Agricultura',
+        'description' => 'La agricultura de precisión al alcance de todos',
+        'href' => route('cerealis'),
+        'src' => Vite::mockup('cerealis-thumbnail.png'),
+    ]
 ];
 @endphp
 

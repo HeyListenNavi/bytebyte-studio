@@ -60,4 +60,8 @@ Route::prefix('project')->group(function() {
     Route::get('/lyam-company', function() {
         return view('projects.lyam-company');
     })->name('lyam-company');
+
+    Route::get('/cerealis', function() {
+        return view('projects.cerealis');
+    })->name('cerealis');
 });
