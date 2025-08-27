@@ -63,18 +63,21 @@
                 ></x-form-input> 
 
                 <x-form-input
-                    x-data="{
-                        minDateTime: new Date().toISOString().slice(0, 16),
-                        maxDateTime: new Date(new Date().setDate(new Date().getDate() + 14)).toISOString().slice(0, 16)
-                    }"
-                    x-bind:max="maxDateTime"
-                    x-bind:min="minDateTime"
                     label="Horario"
-                    id="datetime"
-                    placeholder="Horario disponible"
+                    id="date"
                     :required="true"
-                    type="datetime-local"
-                    value="{{ old('datetime') }}"
+                    type="date"
+                    value="{{ old('date') }}"
+                ></x-form-input>
+
+                <x-form-input
+                    label="Hora"
+                    id="time"
+                    :required="true"
+                    type="time"
+                    min="09:00"
+                    max="18:00"
+                    value="{{ old('time') }}"
                 ></x-form-input>
 
                 <x-button class="text-label-large self-end"
