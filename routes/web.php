@@ -27,6 +27,9 @@ Route::get('/contact-us', [PageController::class, 'contact'])
 
 Route::get('/sent', [PageController::class, 'sent'])
     ->name('sent');
+
+Route::get('/bot-information-form', [PageController::class, 'ragForm'])
+    ->name('rag-form');
    
 Route::post('/contact', [ContactController::class, 'submit'])
     ->name('contact.submit');

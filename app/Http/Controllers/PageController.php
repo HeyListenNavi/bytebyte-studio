@@ -38,4 +38,8 @@ class PageController extends Controller
     public function sent() {
         return view('sent-correctly');
     }
+
+    public function ragForm() {
+        return view('rag-form');
+    }
 }

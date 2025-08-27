@@ -4,7 +4,7 @@
 
 @section('body')
 <x-hero>
-    <div class="bg-glass container col-span-2 mx-auto flex max-w-6xl flex-col items-center justify-center gap-10 rounded-2xl px-4 py-8 shadow-2xl backdrop-blur-lg lg:px-24">
+    <div class="bg-glass container col-span-2 mx-auto flex max-w-6xl flex-col items-center justify-center gap-10 rounded-2xl my-8 px-4 py-8 shadow-2xl backdrop-blur-lg lg:px-24">
         <div class="flex flex-col items-center gap-1">
             <h2 class="text-body-medium md:text-body-large text-foreground-secondary font-normal">Contáctanos</h2>
             <h1 class="text-headline-large md:text-display-medium text-center">¿Listo para transformar tu negocio?</h1>
