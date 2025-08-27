@@ -29,7 +29,6 @@
                     </div>
                 @endif
 
-                <!-- Sección de Información General de la Empresa -->
                 <fieldset class="grid gap-6 xl:grid-cols-2">
                     <x-form-input
                         label="Nombre de tu Empresa/Negocio"
@@ -49,7 +48,6 @@
                     ></x-form-input>
                 </fieldset>
 
-                <!-- Sección de Información Detallada para RAG (usando textareas) -->
                 <fieldset class="grid gap-6">
                     <x-form-input
                         label="¿Quiénes somos? (Misión, Visión, Historia)"
@@ -71,7 +69,6 @@
                         style="white-space: pre-line"
                     >{{ old('whatWeDo') }}</x-form-input>
 
-                    <!-- Nueva pregunta: Cultura y Tono de la Marca -->
                     <x-form-input
                         label="Cultura y Tono de la Marca"
                         id="brandTone"
@@ -82,7 +79,6 @@
                         style="white-space: pre-line"
                     >{{ old('brandTone') }}</x-form-input>
 
-                    <!-- Nueva pregunta: Clientes y Público Objetivo -->
                     <x-form-input
                         label="Clientes y Público Objetivo"
                         id="targetAudience"
@@ -112,7 +108,6 @@
                         style="white-space: pre-line"
                     >{{ old('contactInfo') }}</x-form-input>
                     
-                    <!-- Nueva pregunta: Políticas de la Empresa -->
                     <x-form-input
                         label="Políticas de la Empresa (Devoluciones, Envíos, Garantías)"
                         id="companyPolicies"
@@ -133,7 +128,6 @@
 
                 </fieldset>
                 
-                <!-- Sección de Contacto Adicional -->
                 <fieldset class="grid gap-6 xl:grid-cols-2">
                     <x-form-input
                         label="Correo Electrónico de Contacto"
@@ -154,7 +148,6 @@
                     ></x-form-input>
                 </fieldset>
 
-                <!-- Botón de Envío -->
                 <x-button class="text-label-large self-end"
                     data-sitekey="{{ config('services.recaptcha.site_key') }}"
                     data-callback="onSubmit"
