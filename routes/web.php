@@ -30,6 +30,9 @@ Route::get('/sent', [PageController::class, 'sent'])
 
 Route::get('/bot-information', [PageController::class, 'ragForm'])
     ->name('rag-form');
+
+Route::get('/schedule ', [PageController::class, 'scheduleForm'])
+    ->name('schedule-form');
    
 Route::post('/contact', [ContactController::class, 'submit'])
     ->name('contact.submit');

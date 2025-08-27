@@ -42,4 +42,8 @@ class PageController extends Controller
     public function ragForm() {
         return view('rag-form');
     }
+
+    public function scheduleForm() {
+        return view('schedule-form');
+    }
 }
