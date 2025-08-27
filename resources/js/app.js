@@ -2,6 +2,7 @@ import './bootstrap';
 import.meta.glob([
   '../images/**',
 ]);
+import "cally";
 
 document.addEventListener('alpine:init', function () {
   Alpine.data('powerSequence', function () {

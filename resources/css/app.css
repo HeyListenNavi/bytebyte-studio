@@ -121,3 +121,35 @@
     opacity: 0.4;
     transition: filter 0.1s ease-in-out, opacity 0.1s;
 }
+
+calendar-date {
+    font-family: var(--font-sans) !important;
+
+    &::part(button) {
+      border: none;
+      background-color: var(--color-highlight);
+      color: var(--color-foreground);
+      padding: 8px;
+      border-radius: 16px;
+      transition: background 150ms;
+    }
+
+    &::part(button):hover {
+      background-color: color-mix(in oklab, var(--color-highlight) 80%, transparent);
+    }
+  }
+
+  calendar-month {
+    --color-accent: var(--color-highlight);
+    --color-text-on-accent: var(--color-foreground);
+
+    &::part(button) {
+      border-radius: 16px;
+      font-family: var(--font-sans);
+      transition: background 150ms;
+    }
+
+    &::part(button):hover {
+        background-color: color-mix(in oklab, var(--color-highlight) 20%, transparent);
+    }
+  }
