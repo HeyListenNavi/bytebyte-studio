@@ -73,7 +73,7 @@
     --background-image-body: url("@images/hero-background.png"),
         linear-gradient(
             180deg,
-            rgba(8, 10, 12, 1) 100vh,
+            rgba(8, 10, 12, 1) 200vh,
             rgba(16, 20, 24, 1) 100%
         );
     --background-image-banner: url("@images/banner-background.png");
