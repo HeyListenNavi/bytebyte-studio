@@ -146,7 +146,7 @@
             class="relative max-w-full"
         >
             <div x-ref="scroll" class="flex flex-row items-start py-6 px-24 gap-2 lg:gap-6 overflow-auto snap-x snap-mandatory" style="scrollbar-width: none;">
-                <x-projects-section type="preview"></x-projects-section>
+                <x-projects-section type="preview" :projects="$projects"></x-projects-section>
             </div>
 
             <div class="w-full absolute top-1/2 -translate-y-1/2 left-0 flex justify-between z-10 pointer-events-none px-0 md:px-2">

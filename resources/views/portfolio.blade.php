@@ -19,6 +19,6 @@
     </div>
 
     <div class="container mx-auto px-4 grid md:grid-cols-2 items-center justify-center gap-16">
-        <x-projects-section type="card"></x-projects-section>
+        <x-projects-section type="card" :projects="$projects"></x-projects-section>
     </div>
 @endsection
