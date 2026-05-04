@@ -33,41 +33,9 @@ Route::get('/bot-information', [PageController::class, 'ragForm'])
 
 Route::get('/schedule ', [PageController::class, 'scheduleForm'])
     ->name('schedule-form');
-   
+
 Route::post('/contact', [ContactController::class, 'submit'])
-    ->name('contact.submit');
+       ->name('contact.submit');
 
-// Todo: Fix this shit
-Route::prefix('project')->group(function() {
-    Route::get('/hestia', function() {
-        return view('projects.hestia');
-    })->name('hestia');
-
-    Route::get('/cleanqueens', function() {
-        return view('projects.cleanqueens');
-    })->name('cleanqueens');
-    
-    Route::get('/corteza', function() {
-        return view('projects.corteza');
-    })->name('corteza');
-
-    Route::get('/ares', function() {
-        return view('projects.ares');
-    })->name('ares');
-
-    Route::get('/medrano-productions', function() {
-        return view('projects.medrano-productions');
-    })->name('medrano-productions');
-
-    Route::get('/maria-bonita', function() {
-        return view('projects.maria-bonita');
-    })->name('maria-bonita');
-
-    Route::get('/lyam-company', function() {
-        return view('projects.lyam-company');
-    })->name('lyam-company');
-
-    Route::get('/cerealis', function() {
-        return view('projects.cerealis');
-    })->name('cerealis');
-});
+Route::get('/project/{project:slug}', [PageController::class, 'project'])
+    ->name('project.show');
